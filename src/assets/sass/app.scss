@@ -1,0 +1,76 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #666;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #232323;
+}
+
+// BAHAN
+.break {
+    clear: both;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+// ROUTER VIEW ANIMATION
+.route-enter-from {
+    opacity: 0;
+}
+
+.route-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.route-leave-to {
+    opacity: 0;
+}
+
+.route-leave-active {
+    transition: all 0.3s ease-in;
+}
+
+// RESET DEFAULT
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+button:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ccc;
+    box-shadow: 0 0 0 #ccc inset, 0 0 0 #ccc;
+    outline: 0 none;
+}

@@ -1,14 +1,10 @@
-import {
-    createRouter,
-    createWebHistory
-} from 'vue-router'
-import store from '@/store'
+import {createRouter, createWebHistory} from 'vue-router'
 
 const routes = [
     {
         path: '/:pathMatch(.*)*',
         name: 'not-found',
-        component: () => import( /* webpackChunkName: "404" */ '@/components/errors/404.vue')
+        component: () => import( /* webpackChunkName: "404" */ '@/components/layouts/404.vue')
     },
     {
         path: '/',
@@ -21,8 +17,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(
-        import.meta.env.BASE_URL),
+    history: createWebHistory(import.meta.env.BASE_URL),
     linkActiveClass: 'active',
     routes
 })
