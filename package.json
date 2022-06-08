@@ -1,0 +1,19 @@
+{
+  "name": "metaverse",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --port=8080 --host",
+    "build": "vite build",
+    "serve": "vite preview --port=8080 --host"
+  },
+  "dependencies": {
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "vite": "^2.9.9"
+  }
+}
