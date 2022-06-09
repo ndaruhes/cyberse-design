@@ -1,12 +1,15 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'RocknRoll One', sans-serif;
 }
 
 body {
-    color: black !important;
+    background: rgb(37,6,57);
+    background: linear-gradient(153deg, rgba(37,6,57,1) 0%, rgba(41,7,63,1) 100%);
 }
 
 ::-webkit-scrollbar {

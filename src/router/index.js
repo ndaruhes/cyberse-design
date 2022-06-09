@@ -1,10 +1,12 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
+import Home from '@/views/Home.vue'
+
 const routes = [
     {
         path: '/:pathMatch(.*)*',
         name: 'not-found',
-        component: () => import( /* webpackChunkName: "404" */ '@/components/layouts/404.vue')
+        component: () => import( /* webpackChunkName: "404" */ '@/components/errors/404.vue')
     },
     {
         path: '/',

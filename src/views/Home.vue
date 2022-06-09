@@ -1,10 +1,19 @@
 <template>
-    <h1>Home Page</h1>
+    <!-- HERO -->
+    <Hero />
+    
+    <!-- ABOUT -->
+    <About />
 </template>
 
 <script>
-export default {};
-</script>
+import Hero from "@/components/home/Hero.vue";
+import About from "@/components/home/About.vue";
+export default {
+    components: { Hero, About },
+};
+</script> 
 
-<style>
+<style lang="scss">
+@import '@/assets/sass/home.scss';
 </style>

@@ -1,4 +1,7 @@
 <template>
+    <!-- NAVBAR -->
+    <Navbar />
+
     <!-- ROUTER VIEW -->
     <router-view v-slot="{Component}">
         <transition name="route" mode="out-in">
@@ -8,9 +11,13 @@
 </template>
 
 <script>
-export default {};
+import Navbar from "@/components/layouts/Navbar.vue";
+import Footer from "@/components/layouts/Footer.vue";
+export default {
+    components: {Navbar, Footer},
+};
 </script>
 
 <style lang="scss">
-@import '@/assets/sass/app.scss';
+@import "@/assets/sass/app.scss";
 </style>
