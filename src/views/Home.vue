@@ -1,7 +1,7 @@
 <template>
     <!-- HERO -->
     <Hero />
-    
+
     <!-- ABOUT -->
     <About />
 </template>
@@ -13,7 +13,3 @@ export default {
     components: { Hero, About },
 };
 </script> 
-
-<style lang="scss">
-@import '@/assets/sass/home.scss';
-</style>
