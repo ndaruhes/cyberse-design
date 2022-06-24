@@ -12,4 +12,4 @@ import About from "@/components/home/About.vue";
 export default {
     components: { Hero, About },
 };
-</script> 
+</script>

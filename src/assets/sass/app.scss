@@ -8,10 +8,21 @@
 }
 
 body {
-    background: rgb(6,6,43);
-    background: linear-gradient(115deg, rgba(6,6,43,1) 0%, rgba(50,10,136,1) 100%);
+    background: rgb(19,25,50);
+background: linear-gradient(328deg, rgba(19,25,50,1) 0%, rgba(9,10,11,1) 100%);
+
+    // background: rgb(29,44,59);
+    // background: linear-gradient(302deg, rgba(29,44,59,1) 0%, rgba(9,10,11,1) 100%);
+
+    // background: rgb(6,6,43);
+    // background: linear-gradient(115deg, rgba(6,6,43,1) 0%, rgba(50,10,136,1) 100%);
+
     // background: rgb(37,6,57);
     // background: linear-gradient(153deg, rgba(37,6,57,1) 0%, rgba(41,7,63,1) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

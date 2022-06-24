@@ -4,12 +4,12 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text">
                     <span class="title">
-                        Jelajahi dunia metaverse bersama <b class="text-yellow">Cyberse</b>
+                        Jelajahi dunia metaverse bersama <b class="text-main">Cyberse</b>
                     </span>
                     <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum hic harum ab ipsam ut voluptatum exercitationem.</span>
                     <div class="action">
-                        <a href="#about" class="btn btn-dark me-2">Yuk, Gas Eksplor</a>
-                        <router-link to="/" class="btn" style="border: 1px solid #7b61b9; color: #7b61b9">Yuk, Gas Eksplor</router-link>
+                        <a href="#about" class="btn bg-main me-2">Yuk, Gas Eksplor</a>
+                        <router-link to="/" class="btn outline-main"><i class="uil uil-play me-1"></i>Tonton Video</router-link>
                     </div>
                 </div>
                 <div class="col-md-6 image">
@@ -29,6 +29,7 @@ export default {};
 .hero {
     padding: 80px 0;
     .text {
+        position: relative;
         span {
             display: block;
             color: white;
@@ -44,6 +45,7 @@ export default {};
         }
     }
     .image {
+        position: relative;
         background: url("@/assets/images/hero-background.png");
         background-size: contain;
         background-repeat: no-repeat;

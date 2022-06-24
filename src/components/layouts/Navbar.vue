@@ -30,6 +30,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/sass/variables.scss";
 .navbar {
     padding: 10px 0;
 }
@@ -38,5 +39,6 @@ export default {};
 }
 .nav-link {
     font-size: 18px;
+    color: $white !important;
 }
 </style>

@@ -2,6 +2,9 @@
     <!-- NAVBAR -->
     <Navbar />
 
+    <!-- PARTICLE -->
+    <Particles />
+
     <!-- ROUTER VIEW -->
     <router-view v-slot="{Component}">
         <transition name="route" mode="out-in">
@@ -13,8 +16,9 @@
 <script>
 import Navbar from "@/components/layouts/Navbar.vue";
 import Footer from "@/components/layouts/Footer.vue";
+import Particles from "@/components/layouts/Particles.vue";
 export default {
-    components: {Navbar, Footer},
+    components: { Navbar, Footer, Particles },
 };
 </script>
 

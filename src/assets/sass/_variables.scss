@@ -1,10 +1,29 @@
-$main: red;
-$yellow: #FAFF10;
+// $main: red;
+$white: white;
 
 
 // TEXT COLOR
-.text-yellow{
-    color: $yellow !important;
+.text-main{
+    background: linear-gradient(90deg, #762DB6 0%, #9352D6 67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+// BACKGROUND
+.bg-main{
+    background: rgb(118,45,182);
+    background: linear-gradient(103deg, rgba(118,45,182,1) 47%, rgba(147,82,214,1) 100%);
+    color: $white;
+
+    &:hover{
+        color: $white;
+    }
+}
+
+.outline-main{
+    border: 1px solid #9352d6;
+    background: linear-gradient(90deg, #762DB6 0%, #9352D6 67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 // ANIMATION
