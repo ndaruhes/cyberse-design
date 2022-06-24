@@ -8,4 +8,9 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import "@popperjs/core"
 
-createApp(App).use(store).use(router).mount('#app')
+// FullPage
+import 'vue-fullpage.js/dist/style.css'
+import VueFullPage from 'vue-fullpage.js'
+
+
+createApp(App).use(VueFullPage).use(store).use(router).mount('#app')
