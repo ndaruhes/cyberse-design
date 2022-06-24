@@ -20,8 +20,11 @@ export default {
     data() {
         return {
             options: {
+                licenseKey: null,
                 menu: "#menu",
                 navigation: true,
+                keyboardScrolling: true,
+                credits: { enabled: false },
             },
         };
     },

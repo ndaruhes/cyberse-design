@@ -119,7 +119,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 canvas {
     display: block;
 }

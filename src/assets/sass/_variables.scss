@@ -8,6 +8,14 @@ $white: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.text-greenGradient{
+    background: #27AE60;
+    background: linear-gradient(to right, #27AE60 0%, #2ECC71 81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 // BACKGROUND
 .bg-main{
     background: rgb(118,45,182);

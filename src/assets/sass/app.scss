@@ -91,6 +91,6 @@ input[type="password"]:focus {
     outline: 0 none;
 }
 
-.fp-watermark{
-    display: none;
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: #cfcfcf !important;
 }

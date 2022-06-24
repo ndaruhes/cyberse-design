@@ -1,5 +1,5 @@
 <template>
-    <!-- PARTICLE -->
+    <!-- PARTICLES -->
     <Particles />
 
     <!-- ROUTER VIEW -->

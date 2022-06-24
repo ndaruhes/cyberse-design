@@ -14,7 +14,7 @@
                         <a class="nav-link" href="#"><i class="uil uil-lightbulb-alt me-1"></i>About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="uil uil-rocket me-1"></i>Discover</a>
+                        <a class="nav-link" href="#"><i class="uil uil-rocket me-2"></i>Discover</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="uil uil-headphones-alt me-1"></i>Contact Us</a>
