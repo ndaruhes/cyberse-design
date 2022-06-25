@@ -5,12 +5,12 @@
                 <div class="col-md-6 text">
                     <span id="typed" class="text-greenGradient"></span>
                     <span class="title">
-                        Jelajahi dunia metaverse bersama <b class="text-main">Cyberse</b>
+                        Jelajahi Dunia Metaverse Bersama <b class="text-main">Cyberse</b>
                     </span>
                     <span class="subtitle">Cyberse akan mengajak kamu berkeliling untuk menjelajah dan mengetahui dunia metaverse dengan cara yang berbeda</span>
                     <div class="action">
                         <a href="#about" class="btn bg-main me-2">Yuk, Gas Eksplor</a>
-                        <router-link to="/" class="btn outline-main"><i class="uil uil-play me-1"></i>Lihat Trailer</router-link>
+                        <router-link to="/" class="btn outline-main"><i class="uil uil-play-circle me-1"></i>Lihat Trailer</router-link>
                     </div>
                 </div>
                 <div class="col-md-6 image">
@@ -26,8 +26,8 @@ export default {
     mounted() {
         new Typed("#typed", {
             strings: [
-                "A New Different Way to Improve Your Skills",
-                "Let's Join and Start Growing with Us...",
+                "A New Different Way to Explore A New World",
+                "Simple & Clear Will Make You Understand Better",
             ],
             smartBackspace: true,
             typeSpeed: 50,
@@ -54,7 +54,7 @@ export default {
         .title {
             margin-top: 5px;
             display: block;
-            font-size: 50px;
+            font-size: 45px;
             line-height: 60px;
             margin-bottom: 20px;
         }
