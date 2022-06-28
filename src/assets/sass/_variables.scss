@@ -56,3 +56,21 @@ $white: white;
         transform: translate(0, 0);
     }
 }
+
+#leftToRight{
+    animation: myAnim 3s ease-out 0s 1 normal forwards;
+}   
+
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
