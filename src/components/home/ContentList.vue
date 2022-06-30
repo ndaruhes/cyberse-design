@@ -1,7 +1,7 @@
 <template>
     <div class="timeline">
         <div class="container">
-            <!-- <h1 class="text-center text-main pb-4">Explore Our Timeline</h1> -->
+            <h1 class="heading text-main">Explore Our Timeline</h1>
             <div class="timeline-content">
                 <div class="timeline-container left" v-animate-onscroll="{ down: 'zoomInUp' }">
                     <div class="content">
@@ -51,8 +51,13 @@
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/sass/variables";
 .timeline {
     padding: 50px 0;
+    .heading {
+        font-size: 25px;
+        text-align: center;
+    }
     .timeline-content {
         position: relative;
 
@@ -60,7 +65,7 @@
             content: "";
             position: absolute;
             width: 6px;
-            background-color: white;
+            background-color: $white;
             top: 0;
             bottom: 0;
             left: 50%;
@@ -93,7 +98,7 @@
             .content {
                 position: relative;
                 border-radius: 6px;
-                color: white;
+                color: $white;
                 img {
                     width: 25%;
                     margin-bottom: 20px;
@@ -137,9 +142,9 @@
 
             &::before {
                 left: 60px;
-                border: medium solid white;
+                border: medium solid $white;
                 border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
+                border-color: transparent $white transparent transparent;
             }
         }
         .left,

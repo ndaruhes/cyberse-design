@@ -51,6 +51,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/sass/variables";
 .kinds {
     padding-top: 20px;
     // height: 100vh;
