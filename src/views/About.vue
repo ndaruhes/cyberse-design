@@ -1,7 +1,5 @@
 <template>
     <section class="about">
-        <Navbar />
-        <!-- about isi -->
         <div class="container">
             <div class="row">
                 <div class="col-md-6 py-4">
@@ -29,13 +27,6 @@
 
     </section>
 </template>
-
-<script>
-import Navbar from "@/components/layouts/Navbar.vue";
-export default {
-    components: { Navbar },
-};
-</script>
 
 <style scoped lang="scss">
 .about {

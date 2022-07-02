@@ -56,20 +56,11 @@ $white: white;
     }
 }
 
-#leftToRight{
-    animation: myAnim 3s ease-out 0s 1 normal forwards;
-}   
-
-@keyframes myAnim {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0.2;
-	}
-
-	100% {
-		opacity: 1;
-	}
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

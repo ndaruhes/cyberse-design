@@ -1,59 +1,82 @@
 <template>
-    <!-- <full-page ref="fullpage" :options="options" id="fullpage"> -->
-    <!-- NAVBAR & HERO -->
-
-    <!-- </full-page> -->
-    <div class="section">
-        <Navbar />
-        <Hero />
-    </div>
-
-    <!-- CONTENT LISTS -->
-    <div class="section">
-        <ContentList />
-    </div>
-
-    <!-- INTRO -->
-    <div class="section">
-        <Intro />
-    </div>
-
-    <!-- KINDS -->
-    <div class="section">
-        <Kinds />
-    </div>
-
-    <!-- BENEFIT -->
-    <div class="section">
-        <Benefit />
-    </div>
-
-    <div class="section">
-        <Footer />
+    <div class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text">
+                    <span id="typed" class="text-greenGradient"></span>
+                    <span class="title">
+                        Jelajahi Dunia Metaverse Bersama <b class="text-main">Cyberse</b>
+                    </span>
+                    <span class="subtitle">Cyberse akan mengajak kamu berkeliling untuk menjelajah dan mengetahui dunia metaverse dengan cara yang berbeda</span>
+                    <div class="action">
+                        <router-link to="/menu" class="btn bg-main me-2">Yuk, Gas Eksplor</router-link>
+                        <router-link to="/" class="btn outline-main"><i class="uil uil-play-circle me-1"></i>Lihat Trailer</router-link>
+                    </div>
+                </div>
+                <div class="col-md-6 image">
+                    <img src="@/assets/images/hero.png" alt="hero.png" class="w-100">
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-import Navbar from "@/components/layouts/Navbar.vue";
-import Hero from "@/components/home/Hero.vue";
-import ContentList from "@/components/home/ContentList.vue";
-import Intro from "@/components/home/Intro.vue";
-import Kinds from "@/components/home/Kinds.vue";
-import Benefit from "@/components/home/Benefit.vue";
-import Footer from "@/components/layouts/Footer.vue";
 export default {
-    components: { Navbar, Hero, ContentList, Intro, Kinds, Benefit, Footer },
-    data() {
-        return {
-            options: {
-                licenseKey: null,
-                menu: "#menu",
-                navigation: true,
-                keyboardScrolling: true,
-                credits: { enabled: false },
-            },
-        };
+    mounted() {
+        new Typed("#typed", {
+            strings: [
+                "A New Different Way to Explore A New World",
+                "Simple & Clear Will Make You Understand Better",
+            ],
+            smartBackspace: true,
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+            startDelay: 1000,
+        });
     },
-    methods: {},
 };
 </script>
+
+<style lang="scss" scoped>
+@import "@/assets/sass/variables";
+.hero {
+    padding: 80px 0;
+    .text {
+        position: relative;
+        span {
+            color: white;
+        }
+        #typed {
+            font-size: 23px;
+        }
+        .title {
+            margin-top: 5px;
+            display: block;
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    .image {
+        position: relative;
+        background: url("@/assets/images/hero-background.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img {
+            animation: sky 12s linear infinite;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+}
+</style>

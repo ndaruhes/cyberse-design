@@ -3,42 +3,42 @@
         <div class="container">
             <h1 class="heading text-main">Explore Our Timeline</h1>
             <div class="timeline-content">
-                <div class="timeline-container left" v-animate-onscroll="{ down: 'zoomInUp' }">
+                <div class="timeline-container left">
                     <div class="content">
                         <img src="@/assets/images/kinds/asset1.png" alt="contentlist">
                         <span class="title">Perkenalan Metaverse</span>
                         <span class="subtitle">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.</span>
                     </div>
                 </div>
-                <div class="timeline-container right" v-animate-onscroll="{ down: 'zoomInUp' }">
+                <div class="timeline-container right">
                     <div class="content">
                         <img src="@/assets/images/kinds/asset1.png" alt="contentlist">
                         <span class="title">Teknologi Metaverse</span>
                         <span class="subtitle">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.</span>
                     </div>
                 </div>
-                <div class="timeline-container left" v-animate-onscroll="{ down: 'zoomInUp' }">
+                <div class="timeline-container left">
                     <div class="content">
                         <img src="@/assets/images/kinds/asset1.png" alt="contentlist">
                         <span class="title">Keuntungan Metaverse</span>
                         <span class="subtitle">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.</span>
                     </div>
                 </div>
-                <div class="timeline-container right" v-animate-onscroll="{ down: 'zoomInUp' }">
+                <div class="timeline-container right">
                     <div class="content">
                         <img src="@/assets/images/kinds/asset1.png" alt="contentlist">
                         <span class="title">Perkenalan Metaverse</span>
                         <span class="subtitle">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.</span>
                     </div>
                 </div>
-                <div class="timeline-container left" v-animate-onscroll="{ down: 'zoomInUp' }">
+                <div class="timeline-container left">
                     <div class="content">
                         <img src="@/assets/images/kinds/asset1.png" alt="contentlist">
                         <span class="title">Teknologi Metaverse</span>
                         <span class="subtitle">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.</span>
                     </div>
                 </div>
-                <div class="timeline-container right" v-animate-onscroll="{ down: 'zoomInUp' }">
+                <div class="timeline-container right">
                     <div class="content">
                         <img src="@/assets/images/kinds/asset1.png" alt="contentlist">
                         <span class="title">Keuntungan Metaverse</span>
