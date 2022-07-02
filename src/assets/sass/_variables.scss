@@ -26,6 +26,12 @@ $white: white;
     }
 }
 
+.bg-greenGradient{
+    background: #27AE60;
+    background: linear-gradient(to right, #27AE60 0%, #2ECC71 81%);
+}
+
+// OUTLINE
 .outline-main{
     border: 1px solid #9352d6;
     background: linear-gradient(90deg, #762DB6 0%, #9352D6 67%);
