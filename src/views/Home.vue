@@ -2,6 +2,9 @@
     <div class="hero">
         <div class="container">
             <div class="row align-items-center">
+                <div class="col-md-6 image-left">
+                    <img src="@/assets/images/hero.png" alt="hero.png" class="w-100">
+                </div>
                 <div class="col-md-6 text">
                     <span id="typed" class="text-greenGradient"></span>
                     <span class="title">
@@ -9,11 +12,11 @@
                     </span>
                     <span class="subtitle">Cyberse akan mengajak kamu berkeliling untuk menjelajah dan mengetahui dunia metaverse dengan cara yang berbeda</span>
                     <div class="action">
-                        <router-link to="/menu" class="btn bg-main me-2">Yuk, Gas Eksplor</router-link>
-                        <router-link to="/" class="btn outline-main"><i class="uil uil-play-circle me-1"></i>Lihat Trailer</router-link>
+                        <router-link to="/explore" class="btn bg-main me-2">Yuk, Gas Eksplor</router-link>
+                        <router-link to="/" class="btn outline-main"><i class="uil uil-users-alt me-1"></i>Gabung Komunitas</router-link>
                     </div>
                 </div>
-                <div class="col-md-6 image">
+                <div class="col-md-6 image-right">
                     <img src="@/assets/images/hero.png" alt="hero.png" class="w-100">
                 </div>
             </div>
@@ -64,7 +67,8 @@ export default {
             margin-bottom: 40px;
         }
     }
-    .image {
+    .image-left,
+    .image-right {
         position: relative;
         background: url("@/assets/images/hero-background.png");
         background-size: contain;
@@ -75,8 +79,36 @@ export default {
             animation: sky 12s linear infinite;
         }
     }
+    .image-left {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .hero {
+        padding: 0;
+        .text {
+            margin-top: 20px;
+            #typed {
+                font-size: 13px;
+            }
+            .title {
+                margin-top: 0;
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+        .image-left {
+            display: block;
+        }
+        .image-right {
+            display: none;
+        }
+    }
 }
 </style>

@@ -1,37 +1,61 @@
 <template>
     <div class="intro">
         <div class="container">
+            <div class="back-section">
+                <button type="button" @click="checkHistory() ? $router.go(-1) : $router.push('/')" class="btn text-greenGradient">
+                    &laquo; Kembali
+                </button>
+            </div>
+
             <div class="heading">
                 <h1 class="text-main">Apa Sih Metaverse</h1>
                 <div class="line bg-main"></div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-4 text">
+            <div class="row">
+                <div class="col-md-4 text text-1">
                     <h3 class="text-greenGradient">Perkenalan</h3>
+                    <div class="line"></div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus iusto molestiae accusamus excepturi ab aut aperiam ipsam recusandae, suscipit incidunt libero amet eveniet praesentium iste, autem repellat reprehenderit eum!</p>
+                    <button class="btn bg-main">Jenis Metaverse</button>
                 </div>
                 <div class="col-md-4 image">
                     <img src="@/assets/images/intro/intro.png" class="w-100" alt="image">
                 </div>
-                <div class="col-md-4 text">
+                <div class="col-md-4 text text-2">
                     <h3 class="text-greenGradient">Apa Itu Metaverse</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa maxime nemo a sint dolores officia, optio omnis enim, corporis vero doloremque perspiciatis, sunt nisi est ipsum qui. Enim, reprehenderit!</p>
+                    <div class="line"></div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus iusto molestiae accusamus excepturi ab aut aperiam ipsam recusandae, suscipit incidunt libero amet eveniet praesentium iste, autem repellat reprehenderit eum!</p>
+                    <button class="btn bg-main">Jenis Metaverse</button>
                 </div>
-                <!-- <div class="network-wave">
-                    <img src="@/assets/images/network-wave.svg" alt="image">
-                </div> -->
             </div>
+        </div>
+        <div class="network-wave">
+            <img src="@/assets/images/network-wave.png" alt="image">
         </div>
     </div>
 </template>
+
+<script>
+import Mixins from "@/mixins";
+export default {
+    mixins: [Mixins],
+};
+</script>
 
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
 .intro {
     width: 100%;
-    height: 92vh;
-    display: flex;
-    align-items: center;
+    padding: 30px 0 70px 0;
+    position: relative;
+
+    .back-section {
+        margin-bottom: 35px;
+        button {
+            z-index: 1000;
+            position: relative;
+        }
+    }
 
     .heading {
         margin-bottom: 20px;
@@ -48,22 +72,22 @@
             margin: 0 auto;
         }
     }
-    .network-wave {
-        position: absolute;
-        // z-index: 999;
-        right: 0;
-        top: 0;
-        img {
-            width: 20%;
-        }
-    }
     .image {
         position: relative;
+        z-index: 1000;
     }
     .text {
+        z-index: 1000;
         position: relative;
         h3 {
             font-size: 25px;
+        }
+        .line {
+            width: 150px;
+            height: 2px;
+            background: #27ae60;
+            background: linear-gradient(to right, #27ae60 0%, #2ecc71 81%);
+            margin-bottom: 10px;
         }
         p {
             padding: 0;
@@ -71,8 +95,33 @@
             color: $white;
         }
     }
+
+    .text-2 {
+        text-align: right;
+
+        .line {
+            margin-left: auto;
+        }
+    }
+
+    .network-wave {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+        width: 100%;
+        opacity: 0.1;
+        img {
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .intro {
+        .back-section {
+            margin-bottom: 25px;
+        }
+    }
 }
 </style>

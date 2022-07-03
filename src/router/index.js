@@ -27,9 +27,9 @@ const routes = [{
 
      // MAIN CONTENT
      {
-          path: '/menu',
-          name: 'Menu',
-          component: () => import( /* webpackChunkName: "Menu" */ '@/views/Menu.vue'),
+          path: '/explore',
+          name: 'Explore',
+          component: () => import( /* webpackChunkName: "Explore" */ '@/views/Explore.vue'),
           beforeEnter: () => {
                window.scrollTo(0, 0)
           }

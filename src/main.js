@@ -21,9 +21,7 @@ import "@popperjs/core"
 import 'vue-fullpage.js/dist/style.css'
 import VueFullPage from 'vue-fullpage.js'
 
-// Vue Animation
-import VueAnimateOnScroll from 'vue3-animate-onscroll';
+import Mixins from '@/mixins'
 
 
-
-createApp(App).use(VueFullPage).use(VueAnimateOnScroll).use(store).use(router).mount('#app')
+createApp(App).use(VueFullPage).use(store).use(router).mixin(Mixins).mount('#app')

@@ -1,8 +1,8 @@
 <template>
-    <div class="menu">
+    <div class="explore">
         <div class="container">
             <div class="back-section">
-                <button type="button" @click="hasHistory() ? $router.go(-1) : $router.push('/')" class="btn text-greenGradient">
+                <button type="button" @click="checkHistory() ? $router.go(-1) : $router.push('/')" class="btn text-greenGradient">
                     &laquo; Kembali
                 </button>
             </div>
@@ -11,23 +11,23 @@
                 <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro eos corrupti.</span>
             </div>
             <div class="row">
-                <router-link to="/intro" class="col-md-3 option">
-                    <img src="@/assets/images/menu/1.png" alt="menu">
+                <router-link to="/intro" class="col-md-3 col-6 option">
+                    <img src="@/assets/images/menu/1.png" alt="explore">
                     <span class="title text-main">Perkenalan Metaverse</span>
                     <span class="subtitle">Pilih menu ini untuk mengetahui apa itu metaverse</span>
                 </router-link>
-                <router-link to="/technology" class="col-md-3 option">
-                    <img src="@/assets/images/menu/2.png" alt="menu">
+                <router-link to="/technology" class="col-md-3 col-6 option">
+                    <img src="@/assets/images/menu/2.png" alt="explore">
                     <span class="title text-main">Perkenalan Metaverse</span>
                     <span class="subtitle">Pilih menu ini untuk mengetahui apa itu metaverse</span>
                 </router-link>
-                <router-link to="/benefit" class="col-md-3 option">
-                    <img src="@/assets/images/menu/3.png" alt="menu">
+                <router-link to="/benefit" class="col-md-3 col-6 option">
+                    <img src="@/assets/images/menu/3.png" alt="explore">
                     <span class="title text-main">Perkenalan Metaverse</span>
                     <span class="subtitle">Pilih menu ini untuk mengetahui apa itu metaverse</span>
                 </router-link>
-                <router-link to="/" class="col-md-3 option">
-                    <img src="@/assets/images/menu/4.png" alt="menu">
+                <router-link to="/" class="col-md-3 col-6 option">
+                    <img src="@/assets/images/menu/4.png" alt="explore">
                     <span class="title text-main">Perkenalan Metaverse</span>
                     <span class="subtitle">Pilih menu ini untuk mengetahui apa itu metaverse</span>
                 </router-link>
@@ -37,19 +37,16 @@
 </template>
 
 <script>
+import Mixins from "@/mixins";
 export default {
-    methods: {
-        hasHistory() {
-            return window.history.length > 2;
-        },
-    },
+    mixins: [Mixins],
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
 
-.menu {
+.explore {
     padding: 40px 0 70px 0;
     .back-section {
         margin-bottom: 35px;
@@ -92,6 +89,37 @@ export default {
 
         .title {
             font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .explore {
+        padding: 10px 0 55px 0;
+        .back-section {
+            margin-bottom: 25px;
+        }
+        .heading {
+            margin-bottom: 20px;
+            .title {
+                font-size: 18px;
+            }
+            .subtitle {
+                font-size: 13px;
+            }
+        }
+
+        .option {
+            padding: 20px 5px;
+            img {
+                margin-bottom: 10px;
+            }
+            .title {
+                font-size: 14px;
+            }
+            .subtitle {
+                font-size: 12px;
+            }
         }
     }
 }
