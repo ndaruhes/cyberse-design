@@ -17,13 +17,13 @@
                             <router-link class="nav-link" to="/explore"><i class="uil uil-rocket me-2"></i>Explore</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="uil uil-users-alt me-1"></i>Community</a>
+                            <router-link class="nav-link" to="/community"><i class="uil uil-users-alt me-1"></i>Community</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="/about"><i class="uil uil-lightbulb-alt me-1"></i>About</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="uil uil-headphones-alt me-1"></i>Contact</a>
+                            <router-link class="nav-link" to="/contact"><i class="uil uil-headphones-alt me-1"></i>Contact</router-link>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
                     <span class="icon"><i class="uil uil-rocket"></i></span>
                     <span class="text">Explore</span>
                 </router-link>
-                <router-link to="#" class="col-2 nav-menu">
+                <router-link to="/community" class="col-2 nav-menu">
                     <span class="icon"><i class="uil uil-users-alt"></i></span>
                     <span class="text">Community</span>
                 </router-link>
@@ -51,7 +51,7 @@
                     <span class="icon"><i class="uil uil-lightbulb-alt"></i></span>
                     <span class="text">About</span>
                 </router-link>
-                <router-link to="#" class="col-2 nav-menu">
+                <router-link to="/contact" class="col-2 nav-menu">
                     <span class="icon"><i class="uil uil-headphones-alt"></i></span>
                     <span class="text">Contact</span>
                 </router-link>
@@ -65,7 +65,7 @@
 @import "@/assets/sass/variables.scss";
 .navbar {
     padding: 10px 0;
-    z-index: 1000;
+    z-index: 1001;
 }
 .navbar-brand {
     font-size: 20px;
@@ -82,6 +82,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 @media screen and (max-width: 768px) {
     .navbar {
         display: none;
@@ -91,7 +92,7 @@
         background: rgba(0, 0, 0, 0.9);
         position: fixed;
         bottom: 0;
-        z-index: 1000;
+        z-index: 1001;
         padding: 5px 20px;
 
         .nav-logo {

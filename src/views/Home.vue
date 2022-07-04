@@ -2,10 +2,10 @@
     <div class="hero">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 image-left">
+                <div class="col-md-6 image-left" data-aos="fade-up">
                     <img src="@/assets/images/hero.png" alt="hero.png" class="w-100">
                 </div>
-                <div class="col-md-6 text">
+                <div class="col-md-6 text" data-aos="fade-down">
                     <span id="typed" class="text-greenGradient"></span>
                     <span class="title">
                         Jelajahi Dunia Metaverse Bersama <b class="text-main">Cyberse</b>
@@ -16,7 +16,7 @@
                         <router-link to="/" class="btn outline-main"><i class="uil uil-users-alt me-1"></i>Gabung Komunitas</router-link>
                     </div>
                 </div>
-                <div class="col-md-6 image-right">
+                <div class="col-md-6 image-right" data-aos="fade-up">
                     <img src="@/assets/images/hero.png" alt="hero.png" class="w-100">
                 </div>
             </div>

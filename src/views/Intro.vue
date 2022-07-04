@@ -15,22 +15,31 @@
                 <div class="col-md-4 text text-1">
                     <h3 class="text-greenGradient">Perkenalan</h3>
                     <div class="line"></div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus iusto molestiae accusamus excepturi ab aut aperiam ipsam recusandae, suscipit incidunt libero amet eveniet praesentium iste, autem repellat reprehenderit eum!</p>
+                    <p>Metaverse merupakan dunia virtual 3D yang diciptakan menggunakan teknologi augmented reality, virtual reality, dan video. Pengguna dapat merasakan hidup dalam dunia virtual secara realistis.</p>
+                    <p>Pengguna atau para penghuni dunia ini dapat melakukan beragam aktivitas pada platform tersebut, mulai dari investasi hingga melaksanaan pekerjaan secara remote layaknya di dunia nyata.</p>
                     <button class="btn bg-main">Jenis Metaverse</button>
                 </div>
                 <div class="col-md-4 image">
                     <img src="@/assets/images/intro/intro.png" class="w-100" alt="image">
                 </div>
                 <div class="col-md-4 text text-2">
-                    <h3 class="text-greenGradient">Apa Itu Metaverse</h3>
+                    <h3 class="text-greenGradient">Kenapa Metaverse</h3>
                     <div class="line"></div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus iusto molestiae accusamus excepturi ab aut aperiam ipsam recusandae, suscipit incidunt libero amet eveniet praesentium iste, autem repellat reprehenderit eum!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus iusto molestiae accusamus excepturi ab aut aperiam ipsam recusandae, suscipit incidunt libero amet eveniet praesentium iste, autem repellat reprehenderit eum!</p>
                     <button class="btn bg-main">Jenis Metaverse</button>
                 </div>
             </div>
         </div>
         <div class="network-wave">
-            <img src="@/assets/images/network-wave.png" alt="image">
+            <img src="@/assets/backgrounds/2.png" alt="image">
+        </div>
+        <div class="assets">
+            <img src="@/assets/images/kinds/asset1.png" alt="asset" class="img1">
+            <img src="@/assets/images/kinds/asset2.png" alt="asset" class="img2">
+            <img src="@/assets/images/kinds/asset3.png" alt="asset" class="img3">
+            <img src="@/assets/images/kinds/asset4.png" alt="asset" class="img4">
+            <img src="@/assets/images/kinds/asset5.png" alt="asset" class="img5">
         </div>
     </div>
 </template>
@@ -115,12 +124,108 @@ export default {
             width: 100%;
         }
     }
+
+    .assets {
+        img {
+            width: 100px;
+            position: absolute;
+            z-index: 999;
+            opacity: 0.4;
+        }
+        .img1 {
+            top: 60px;
+            left: 70px;
+            animation: sky 7s linear infinite;
+        }
+        .img2 {
+            bottom: 200px;
+            left: 350px;
+            animation: sky 10s linear infinite;
+        }
+        .img3 {
+            top: 50px;
+            right: 200px;
+            animation: sky 9s linear infinite;
+        }
+        .img4 {
+            bottom: 180px;
+            right: 450px;
+            animation: sky 11s linear infinite;
+        }
+        .img5 {
+            top: 0;
+            left: 700px;
+            animation: sky 7s linear infinite;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     .intro {
+        width: 100%;
+        padding: 30px 0 70px 0;
+        position: relative;
+
         .back-section {
-            margin-bottom: 25px;
+            margin-bottom: 35px;
+        }
+
+        .heading {
+            margin-bottom: 20px;
+            h1 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+        }
+        .image {
+            margin: 20px 0;
+        }
+        .text {
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .text-2 {
+            text-align: left;
+
+            .line {
+                margin-left: 0;
+            }
+        }
+
+        .network-wave {
+            top: 200px;
+        }
+
+        .assets {
+            img {
+                width: 60px;
+                opacity: 0.3;
+            }
+            .img1 {
+                top: 400px;
+                left: 0;
+            }
+            .img2 {
+                top: 400px;
+                left: 280px;
+            }
+            .img3 {
+                top: 700px;
+                left: 0;
+            }
+            .img4 {
+                top: 700px;
+                right: 30px;
+            }
+            .img5 {
+                top: 750px;
+                left: 150px;
+            }
         }
     }
 }
