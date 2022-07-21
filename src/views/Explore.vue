@@ -26,10 +26,10 @@
 
                     </div>
                 </router-link>
-                <router-link to="/kinds" class="col-md-3 col-6 option" data-aos="zoom-in">
+                <router-link to="/technology" class="col-md-3 col-6 option" data-aos="zoom-in">
                     <div class="col-md-12 option-content">
                         <img src="@/assets/images/menu/3.png" alt="explore">
-                        <span class="title text-main">Jenis Metaverse</span>
+                        <span class="title text-main">Teknologi Metaverse</span>
                         <span class="subtitle">Pilih menu ini untuk mengetahui apa itu metaverse</span>
 
                     </div>
@@ -73,11 +73,11 @@ export default {
             position: relative;
         }
         .title {
-            font-size: 25px;
+            font-size: 35px;
         }
         .subtitle {
             color: $white;
-            font-size: 18px;
+            font-size: 23px;
         }
     }
 

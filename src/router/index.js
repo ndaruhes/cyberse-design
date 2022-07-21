@@ -58,9 +58,9 @@ const routes = [{
     }
   },
   {
-    path: '/kinds',
-    name: 'Kinds',
-    component: () => import( /* webpackChunkName: "Kinds" */ '@/views/Kinds.vue'),
+    path: '/technology',
+    name: 'Technology',
+    component: () => import( /* webpackChunkName: "Technology" */ '@/views/Technology.vue'),
     beforeEnter: () => {
       window.scrollTo(0, 0)
     }
