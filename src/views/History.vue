@@ -1,82 +1,106 @@
 <template>
-    <div class="kinds">
+    <div class="history">
+        <img src="@/assets/images/backgrounds/2.png" alt="background" class="background">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12">
-                        <img src="@/assets/images/kinds/asset1.png" alt="image">
-                    </div>
+            <div class="back-section" data-aos="zoom-in-up">
+                <button type="button" @click="checkHistory() ? $router.go(-1) : $router.push('/')" class="btn text-greenGradient">
+                    &laquo; Kembali
+                </button>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 image-left">
+                    <img src="@/assets/images/intro/asset1.png" alt="image">
                 </div>
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12">
-                        <img src="@/assets/images/kinds/asset2.png" alt="image">
-                    </div>
+                <div class="col-md-6 text">
+                    <h1 class="heading">
+                        Sejarah <span class="text-main fw-bold">Metaverse</span>
+                    </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
                 </div>
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12">
-                        <img src="@/assets/images/kinds/asset3.png" alt="image">
-                    </div>
-                </div>
-
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12 diff1">
-                        <img src="@/assets/images/kinds/asset4.png" alt="image">
-                    </div>
-                </div>
-                <div class="col-md-4 kind-wrapper img-oke"></div>
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12 diff2">
-                        <img src="@/assets/images/kinds/asset5.png" alt="image">
-                    </div>
-                </div>
-
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12">
-                        <img src="@/assets/images/kinds/asset2.png" alt="image">
-                    </div>
-                </div>
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12">
-                        <img src="@/assets/images/kinds/asset1.png" alt="image">
-                    </div>
-                </div>
-                <div class="col-md-4 kind-wrapper">
-                    <div class="kind-content col-md-12">
-                        <img src="@/assets/images/kinds/asset4.png" alt="image">
-                    </div>
+                <div class="col-md-6 image-right">
+                    <img src="@/assets/images/intro/asset1.png" alt="image">
                 </div>
             </div>
         </div>
     </div>
 </template>
 
+<script>
+export default {};
+</script>
+
 <style lang="scss" scoped>
-@import "@/assets/sass/variables";
-.kinds {
-    padding-top: 20px;
-    // height: 100vh;
-    .kind-wrapper {
-        margin: 10px 0;
-        display: flex;
-        align-items: center;
-        .kind-content {
-            text-align: center;
-            img {
-                width: 45%;
-            }
-        }
-        .diff1 {
-            text-align: left;
-        }
-        .diff2 {
-            text-align: right;
+@import "@/assets/sass/variables.scss";
+.history {
+    .background {
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        z-index: 999;
+        opacity: 0.1;
+    }
+    .back-section {
+        margin-bottom: 35px;
+        button {
+            position: relative;
         }
     }
-    .img-oke {
-        // background-size: contain !important;
-        // background: url("@/assets/images/kinds/neuron.png");
-        // background-repeat: no-repeat !important;
-        // background-position: center !important;
+    .text {
+        .heading {
+            position: relative;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: $white;
+        }
+        p {
+            color: $white;
+            font-size: 20px;
+        }
+    }
+    .image-left {
+        display: none;
+    }
+    .image-left,
+    .image-right {
+        img {
+            width: 100%;
+            position: relative;
+            z-index: 1000;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .history {
+        padding: 0 0 80px 0;
+        .back-section {
+            margin-bottom: 25px;
+        }
+
+        .text {
+            .heading {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+        .image-left {
+            display: block;
+        }
+        .image-right {
+            display: none;
+        }
+        .image-left,
+        .image-right {
+            margin-bottom: 20px;
+            img {
+                width: 90%;
+                margin-left: 5%;
+            }
+        }
     }
 }
 </style>

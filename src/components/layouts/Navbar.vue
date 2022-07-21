@@ -45,7 +45,7 @@
                 </router-link>
                 <router-link to="/community" class="col-2 nav-menu">
                     <span class="icon"><i class="uil uil-users-alt"></i></span>
-                    <span class="text">Community</span>
+                    <span class="text">Commu..</span>
                 </router-link>
                 <router-link to="/about" class="col-2 nav-menu">
                     <span class="icon"><i class="uil uil-lightbulb-alt"></i></span>

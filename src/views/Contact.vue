@@ -1,68 +1,76 @@
 <template>
-    <section class="contact">
-        <div class="container rounded-4 text-white p-4">
-            <!-- judul -->
-            <div class="text-center p-4">
-                <h1 class="display-3">Get in Touch with Us</h1>
-                <p class="desc">Anda punya pertanyaan ? jangan ragu buat kontak ke CS kami yang super ramah!!</p>
+    <div class="contact">
+        <div class="container">
+            <div class="header-mobile">
+                <h1 class="text-main">Hubungi Kami</h1>
+                <span>
+                    Ingin bertanya? jangan ragu buat kontak ke CS kami yang super ramah 😁
+                </span>
             </div>
-            <!-- end judul -->
-            <div class="row">
-                <div class="col-md-4 justify-content-center d-flex">
-                    <div class="ctc">
-                        <span>Phone Number</span>
-                        <i class="uil uil-phone"></i>
-                        <span>+6283728372</span>
-                    </div>
-                </div>
-                <div class="col-md-4 justify-content-center d-flex">
-                    <div class="ctc">
-                        <span>Our Location</span>
-                        <i class="uil uil-map"></i>
-                        <span>Jakarta, Indonesia</span>
-                    </div>
-                </div>
-                <div class="col-md-4 justify-content-center d-flex">
-                    <div class="ctc">
-                        <span>Email</span>
-                        <i class="uil uil-envelope"></i>
-                        <span>Cyberse@gmail.com</span>
-                    </div>
-                </div>
-            </div>
-            <form action="submit">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-6" style="padding:0 1rem;">
-                                <label for="firstName">First Name</label>
-                                <input type="email" placeholder="input your first name.." />
-                            </div>
-                            <div class="col-md-6" style="padding:0 1rem;">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" placeholder="input your last name.." />
-                            </div>
+            <div class="row align-items-center">
+                <div class="col-md-5 image">
+                    <div class="row">
+                        <div class="col-4 item">
+                            <a href="#" class="col-md-12 item-content email">
+                                <i class="uil uil-envelope"></i>
+                                <span class="title">E-Mail</span>
+                                <span class="subtitle">cs@cyberse.com</span>
+                            </a>
+                        </div>
+                        <div class="col-4 item">
+                            <a href="#" class="col-md-12 item-content phone">
+                                <i class="uil uil-phone"></i>
+                                <span class="title">Phone</span>
+                                <span class="subtitle">(021) 5345830</span>
+                            </a>
+                        </div>
+                        <div class="col-4 item">
+                            <a href="#" class="col-md-12 item-content whatsapp">
+                                <i class="uil uil-whatsapp"></i>
+                                <span class="title">Whatsapp</span>
+                                <span class="subtitle">085718492746</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="comment">Comment</label>
-                        <input type="text" placeho>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.866899102564!2d106.7639922395508!3d-6.2019948000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%2C%20Kampus%20Anggrek!5e0!3m2!1sid!2sid!4v1658424939671!5m2!1sid!2sid" class="maps-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="must contain @gmail.com." />
+                <div class="col-md-6 text">
+                    <div class="header-desktop">
+                        <h1 class="text-main">Hubungi Kami</h1>
+                        <span>
+                            Ingin bertanya? jangan ragu buat kontak ke CS kami yang super ramah 😁
+                        </span>
                     </div>
-                    <div class="col-md-6">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" placeholder="must start with +62" />
-                    </div>
+                    <hr class="bg-secondary">
+                    <form action="">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Nama Depan</label>
+                                <input type="text" class="form-control" placeholder="Masukkan Nama Depan">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Nama Belakang</label>
+                                <input type="text" class="form-control" placeholder="Masukkan Nama Belakang">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Alamat E-Mail</label>
+                                <input type="email" class="form-control" placeholder="Masukkan Alamat E-Mail">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>No. Telepon</label>
+                                <input type="number" class="form-control" placeholder="Masukkan No. Telepon">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Pesan</label>
+                                <textarea class="form-control" rows="3" placeholder="Masukkan Pesan"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn bg-main w-100">Kirim Pesan <i class="uil uil-message ms-1"></i></button>
+                    </form>
                 </div>
-                <button>Submit</button>
-            </form>
+            </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
@@ -70,97 +78,117 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/sass/variables";
 .contact {
-    width: 100%;
-    height: 91vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1000;
-    .container {
-        background-image: url("@/assets/images/contacts/2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 1rem;
-        .desc {
-            color: rgba($color: white, $alpha: 0.6);
+    padding: 50px 0;
+    .header-mobile {
+        display: none;
+    }
+    .image {
+        .maps-iframe {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+            height: 300px;
         }
-        .ctc {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: rgba(227, 53, 225, 0.6);
-            padding: 0.5rem 1rem;
-            border-radius: 1rem;
-            width: 200px;
-            i {
-                font-size: 2rem;
-                margin: 5px 0;
+
+        .item {
+            .item-content {
+                text-align: center;
+                color: $white;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(5px);
+                padding: 10px;
+                display: block;
+                text-decoration: none;
+
+                i {
+                    font-size: 30px;
+                }
+                span {
+                    display: block;
+                }
+                .title {
+                    text-transform: uppercase;
+                }
             }
+            .email {
+                background: rgb(187, 32, 25);
+                background: linear-gradient(
+                    143deg,
+                    rgba(187, 32, 25, 1) 27%,
+                    rgba(234, 66, 55, 1) 100%
+                );
+            }
+            .phone {
+                background: rgb(52, 152, 219);
+                background: linear-gradient(
+                    143deg,
+                    rgba(52, 152, 219, 1) 27%,
+                    rgba(127, 192, 236, 1) 100%
+                );
+            }
+
+            .whatsapp {
+                background: rgb(37, 202, 67);
+                background: linear-gradient(
+                    54deg,
+                    rgba(37, 202, 67, 1) 23%,
+                    rgba(93, 243, 120, 1) 100%
+                );
+            }
+        }
+    }
+    .text {
+        .header-desktop {
+            color: $white;
         }
         form {
-            padding: 1rem 3rem;
-            .col-md-6 {
-                display: flex;
-                flex-direction: column;
-                padding: 1rem;
-            }
+            position: relative;
             label {
-                margin-bottom: 5px;
+                color: $white;
             }
-            input {
-                padding: 0.5rem;
-                color: rgba(227, 53, 225, 1);
-            }
+
             button {
-                width: 100%;
-                padding: 0.5rem;
-                font-size: 1.2rem;
-                color: white;
-                background-color: rgba(227, 53, 225, 1);
-                transition: 0.5s;
-                cursor: pointer;
-                margin-top: 10px;
-                &:hover {
-                    opacity: 0.8;
-                }
+                font-size: 20px;
             }
         }
     }
 }
-
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 768px) {
     .contact {
-        overflow: visible;
-        height: 100%;
-        h1 {
-            font-size: 1.5rem;
+        padding: 20px 0 80px 0;
+        .header-mobile {
+            color: $white;
+            display: block;
+            margin-bottom: 20px;
         }
-        p {
-            font-size: 0.8rem;
-        }
+        .image {
+            .maps-iframe {
+                width: 100%;
+                margin-top: 20px;
+                border-radius: 10px;
+                height: 170px;
+            }
 
-        .container {
-            background-color: none;
-            .ctc {
-                margin: 5px 0;
-                padding: 0 1rem;
-                i {
-                    font-size: 1rem;
+            .item {
+                padding: 5px;
+                .item-content {
+                    padding: 5px;
+                    span {
+                        font-size: 11px;
+                    }
                 }
             }
+        }
+        .text {
+            .header-desktop {
+                display: none;
+            }
             form {
-                .col-md-6 {
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0.2rem;
-                }
-                input {
-                    padding: 10px;
-                }
                 button {
-                    font-size: 1rem;
+                    font-size: 15px;
                 }
             }
         }

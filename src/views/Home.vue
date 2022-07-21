@@ -102,6 +102,12 @@ export default {
                 font-size: 15px;
                 margin-bottom: 20px;
             }
+            .action {
+                display: flex;
+                a {
+                    font-size: 14px;
+                }
+            }
         }
         .image-left {
             display: block;

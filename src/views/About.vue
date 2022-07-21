@@ -3,10 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="heading">
-                        <h1 class="text-main">Tentang Cyberse</h1>
-                        <div class="line bg-main"></div>
-                    </div>
+                    <h1 class="heading">
+                        Tentang <span class="text-main fw-bold">Cyberse</span>
+                    </h1>
 
                     <p class="fsd text-white lh-lg">Cyberse merupakan sebuah website yang menampilkan berbagai bentuk dan informasi tentang teknologi metaverse dengan cara yang unik.</p>
                     <p class="fsd text-white lh-lg">
@@ -48,7 +47,7 @@
                                     </div>
                                     <div>
                                         <i class="uil uil-github"></i>
-                                        <span>GalvinSantoso</span>
+                                        <span>galvinsantoso</span>
                                     </div>
                                 </div>
                             </div>
@@ -64,6 +63,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/sass/variables.scss";
 .about {
     width: 100%;
     height: 91vh;
@@ -72,15 +72,8 @@
     position: relative;
     overflow: hidden !important;
     .heading {
+        color: $white;
         margin-bottom: 20px;
-        h1 {
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-        .line {
-            width: 150px;
-            height: 2px;
-        }
     }
     .fsd {
         font-size: 1rem;

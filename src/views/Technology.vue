@@ -7,17 +7,22 @@
                     &laquo; Kembali
                 </button>
             </div>
+
+            <h1 class="heading-mobile">
+                Teknologi Penggunaan <span class="text-main fw-bold">Metaverse</span>
+            </h1>
+
             <div class="row">
                 <div class="col-md-3 tools">
                     <div class="row align-items-center">
-                        <div class="col-md-12 item">
+                        <div class="col-md-12 col-6 item">
                             <div class="image">
                                 <img src="@/assets/images/technology/1.png" alt="image">
                             </div>
                             <span class="title text-main">Virtual Reality</span>
                             <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
                         </div>
-                        <div class="col-md-12 item">
+                        <div class="col-md-12 col-6 item">
                             <div class="image">
                                 <img src="@/assets/images/technology/2.png" alt="image">
                             </div>
@@ -27,25 +32,25 @@
                     </div>
                 </div>
                 <div class="col-md-6 content-image">
-                    <h1 class="heading">
-                        Apa Sih <span class="text-main fw-bold">Metaverse</span>
+                    <h1 class="heading-desktop">
+                        Teknologi Penggunaan <span class="text-main fw-bold">Metaverse</span>
                     </h1>
                     <img src="@/assets/images/intro/asset2.png" alt="image" class="w-100">
                 </div>
                 <div class="col-md-3 tools">
                     <div class="row">
-                        <div class="col-md-12 item">
+                        <div class="col-md-12 col-6 item">
                             <div class="image">
                                 <img src="@/assets/images/technology/3.png" alt="image">
                             </div>
                             <span class="title text-main">Artificial Intelligence</span>
                             <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
                         </div>
-                        <div class="col-md-12 item">
+                        <div class="col-md-12 col-6 item">
                             <div class="image">
                                 <img src="@/assets/images/technology/4.png" alt="image">
                             </div>
-                            <span class="title text-main">Cryptocurrency</span>
+                            <span class="title text-main">Crypto currency</span>
                             <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
                         </div>
                     </div>
@@ -64,7 +69,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
-
 .technology {
     .background {
         width: 90%;
@@ -81,6 +85,9 @@ export default {
             position: relative;
         }
     }
+    .heading-mobile {
+        display: none;
+    }
     .tools {
         .item {
             margin-bottom: 50px;
@@ -88,6 +95,8 @@ export default {
             .image {
                 position: relative;
                 z-index: 1000;
+                display: flex;
+                align-items: center;
                 img {
                     width: 50%;
                     margin-left: 25%;
@@ -112,7 +121,7 @@ export default {
     }
     .content-image {
         z-index: 1000;
-        .heading {
+        .heading-desktop {
             text-align: center;
             position: relative;
             margin-bottom: 40px;
@@ -127,8 +136,36 @@ export default {
 
 @media screen and (max-width: 768px) {
     .technology {
+        padding: 0 0 70px 0;
         .back-section {
-            margin-bottom: 35px;
+            margin-bottom: 25px;
+        }
+        .heading-mobile {
+            display: block;
+            text-align: center;
+            color: $white;
+            margin-bottom: 30px;
+        }
+        .tools {
+            .item {
+                margin-bottom: 0;
+                .image {
+                    min-height: 80px;
+                }
+                .title {
+                    font-size: 18px;
+                    margin: 10px 0 5px 0;
+                }
+                .subtitle {
+                    font-size: 14px;
+                }
+            }
+        }
+        .content-image {
+            margin: 30px 0;
+            .heading-desktop {
+                display: none;
+            }
         }
     }
 }

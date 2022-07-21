@@ -148,7 +148,7 @@ export default {
         }
 
         .option {
-            padding: 0 5px;
+            padding: 0;
             .option-content {
                 padding: 10px;
                 img {
