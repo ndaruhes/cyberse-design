@@ -74,6 +74,7 @@
     .heading {
         color: $white;
         margin-bottom: 20px;
+        text-transform: uppercase;
     }
     .fsd {
         font-size: 1rem;

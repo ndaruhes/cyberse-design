@@ -2,14 +2,14 @@
     <div class="history">
         <img src="@/assets/images/backgrounds/2.png" alt="background" class="background">
         <div class="container">
-            <div class="back-section" data-aos="zoom-in-up">
+            <div class="back-section">
                 <button type="button" @click="checkHistory() ? $router.go(-1) : $router.push('/')" class="btn text-greenGradient">
                     &laquo; Kembali
                 </button>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6 image-left">
-                    <img src="@/assets/images/intro/asset1.png" alt="image">
+                <div class="col-md-6 image">
+                    <img src="@/assets/images/image-shape/asset1.png" alt="image">
                 </div>
                 <div class="col-md-6 text">
                     <h1 class="heading">
@@ -18,16 +18,17 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
                 </div>
-                <div class="col-md-6 image-right">
-                    <img src="@/assets/images/intro/asset1.png" alt="image">
-                </div>
+
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {};
+import Mixins from "@/mixins";
+export default {
+    mixins: [Mixins],
+};
 </script>
 
 <style lang="scss" scoped>
@@ -44,6 +45,7 @@ export default {};
     .back-section {
         margin-bottom: 35px;
         button {
+            z-index: 1000;
             position: relative;
         }
     }
@@ -59,13 +61,10 @@ export default {};
             font-size: 20px;
         }
     }
-    .image-left {
-        display: none;
-    }
-    .image-left,
-    .image-right {
+    .image {
+        text-align: center;
         img {
-            width: 100%;
+            width: 95%;
             position: relative;
             z-index: 1000;
         }
@@ -87,14 +86,7 @@ export default {};
                 font-size: 15px;
             }
         }
-        .image-left {
-            display: block;
-        }
-        .image-right {
-            display: none;
-        }
-        .image-left,
-        .image-right {
+        .image {
             margin-bottom: 20px;
             img {
                 width: 90%;

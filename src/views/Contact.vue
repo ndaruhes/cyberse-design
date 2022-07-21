@@ -8,7 +8,17 @@
                 </span>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-5 image">
+                <div class="col-md-6 image">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.866899102564!2d106.7639922395508!3d-6.2019948000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%2C%20Kampus%20Anggrek!5e0!3m2!1sid!2sid!4v1658424939671!5m2!1sid!2sid" class="maps-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6 text">
+                    <div class="header-desktop">
+                        <h1 class="text-main">Hubungi Kami</h1>
+                        <span>
+                            Ingin bertanya? jangan ragu buat kontak ke CS kami yang super ramah 😁
+                        </span>
+                    </div>
+                    <hr class="bg-secondary">
                     <div class="row">
                         <div class="col-4 item">
                             <a href="#" class="col-md-12 item-content email">
@@ -32,16 +42,6 @@
                             </a>
                         </div>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.866899102564!2d106.7639922395508!3d-6.2019948000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%2C%20Kampus%20Anggrek!5e0!3m2!1sid!2sid!4v1658424939671!5m2!1sid!2sid" class="maps-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-6 text">
-                    <div class="header-desktop">
-                        <h1 class="text-main">Hubungi Kami</h1>
-                        <span>
-                            Ingin bertanya? jangan ragu buat kontak ke CS kami yang super ramah 😁
-                        </span>
-                    </div>
-                    <hr class="bg-secondary">
                     <form action="">
                         <div class="row">
                             <div class="form-group col-md-6">
@@ -80,7 +80,15 @@ export default {};
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
 .contact {
-    padding: 50px 0;
+    .container {
+        background: url("@/assets/images/backgrounds/3.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        height: 90vh;
+        padding: 20px;
+    }
     .header-mobile {
         display: none;
     }
@@ -89,10 +97,18 @@ export default {};
             width: 100%;
             margin-top: 20px;
             border-radius: 10px;
-            height: 300px;
+            height: 590px;
         }
-
+    }
+    .text {
+        .header-desktop {
+            color: $white;
+            h1 {
+                text-transform: uppercase;
+            }
+        }
         .item {
+            margin-bottom: 20px;
             .item-content {
                 text-align: center;
                 color: $white;
@@ -139,11 +155,6 @@ export default {};
                 );
             }
         }
-    }
-    .text {
-        .header-desktop {
-            color: $white;
-        }
         form {
             position: relative;
             label {
@@ -158,11 +169,17 @@ export default {};
 }
 @media screen and (max-width: 768px) {
     .contact {
-        padding: 20px 0 80px 0;
+        padding: 20px 0 170px 0;
         .header-mobile {
             color: $white;
             display: block;
-            margin-bottom: 20px;
+            text-align: center;
+            h1 {
+                text-transform: uppercase;
+            }
+            span {
+                font-size: 15px;
+            }
         }
         .image {
             .maps-iframe {
@@ -171,7 +188,11 @@ export default {};
                 border-radius: 10px;
                 height: 170px;
             }
-
+        }
+        .text {
+            .header-desktop {
+                display: none;
+            }
             .item {
                 padding: 5px;
                 .item-content {
@@ -181,12 +202,8 @@ export default {};
                     }
                 }
             }
-        }
-        .text {
-            .header-desktop {
-                display: none;
-            }
             form {
+                margin-bottom: 80px;
                 button {
                     font-size: 15px;
                 }

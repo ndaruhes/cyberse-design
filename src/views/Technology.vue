@@ -20,14 +20,14 @@
                                 <img src="@/assets/images/technology/1.png" alt="image">
                             </div>
                             <span class="title text-main">Virtual Reality</span>
-                            <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+                            <span class="subtitle">Berinteraksi satu sama lain dalam ruang lingkup tiga dimensi</span>
                         </div>
                         <div class="col-md-12 col-6 item">
                             <div class="image">
                                 <img src="@/assets/images/technology/2.png" alt="image">
                             </div>
                             <span class="title text-main">Internet Connection</span>
-                            <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+                            <span class="subtitle">Metaverse membawa pengguna menjelajahi secara langsung internet digital</span>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     <h1 class="heading-desktop">
                         Teknologi Penggunaan <span class="text-main fw-bold">Metaverse</span>
                     </h1>
-                    <img src="@/assets/images/intro/asset2.png" alt="image" class="w-100">
+                    <img src="@/assets/images/image-shape/asset2.png" alt="image" class="w-100">
                 </div>
                 <div class="col-md-3 tools">
                     <div class="row">
@@ -44,14 +44,14 @@
                                 <img src="@/assets/images/technology/3.png" alt="image">
                             </div>
                             <span class="title text-main">Artificial Intelligence</span>
-                            <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+                            <span class="subtitle">Berbagai karakter dunia metaverse berperilaku sesuai dunia nyata</span>
                         </div>
                         <div class="col-md-12 col-6 item">
                             <div class="image">
                                 <img src="@/assets/images/technology/4.png" alt="image">
                             </div>
                             <span class="title text-main">Crypto currency</span>
-                            <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+                            <span class="subtitle">Adalah mata uang digital mendukung perekonomian masa depan.</span>
                         </div>
                     </div>
                 </div>

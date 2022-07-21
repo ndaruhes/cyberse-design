@@ -8,7 +8,7 @@
             </div>
             <div class="heading" data-aos="zoom-in-down">
                 <span class="title text-greenGradient">Mau Yang Mana Dulu Nih</span>
-                <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro eos corrupti.</span>
+                <span class="subtitle">Siap Berpetualang? Pilihlah informasi dunia metaverse untuk memulainya</span>
             </div>
             <div class="row">
                 <router-link to="/intro" class="col-md-3 col-6 option" data-aos="zoom-in">
@@ -56,7 +56,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
-
 .explore {
     padding: 40px 0 70px 0;
     .back-section {
