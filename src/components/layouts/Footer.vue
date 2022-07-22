@@ -42,7 +42,7 @@ export default {
         a {
             img {
                 position: relative;
-                width: 20px;
+                width: 25px;
             }
         }
     }
@@ -57,6 +57,12 @@ export default {
         }
         .socmed {
             display: block;
+
+            a {
+                img {
+                    width: 20px;
+                }
+            }
         }
     }
 }

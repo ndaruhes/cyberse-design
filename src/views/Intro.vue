@@ -25,8 +25,8 @@
                 <div class="col-md-4 text text-2" data-aos="fade-up">
                     <h3 class="text-greenGradient">Kenapa Metaverse</h3>
                     <div class="line"></div>
-                    <p>Metaverse merupakan dunia virtual 3D yang diciptakan menggunakan teknologi augmented reality, virtual reality, dan video. Pengguna dapat merasakan hidup dalam dunia virtual secara realistis.</p>
-                    <p>Pengguna atau para penghuni dunia ini dapat melakukan beragam aktivitas pada platform tersebut, mulai dari investasi hingga melaksanaan pekerjaan secara remote layaknya di dunia nyata.</p>
+                    <p>Metaverse memiliki potensi untuk berdampak besar pada masa depan yang memungkinkan kita untuk menciptakan dunia virtual yang realistis dan tidak bisa dibedakan dari dunia kita sendiri.</p>
+                    <p>Kita akan dapat mengunjungi dunia ini tanpa meninggalkan tubuh fisik kita dan berinteraksi dengan orang lain dengan cara yang tidak mungkin dilakukan di dunia nyata.</p>
                 </div>
             </div>
         </div>
