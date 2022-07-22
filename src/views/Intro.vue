@@ -105,7 +105,7 @@ export default {
 @media screen and (max-width: 768px) {
     .intro {
         width: 100%;
-        padding: 30px 0 70px 0;
+        padding: 30px 0 0 0;
         position: relative;
 
         .back-section {
@@ -124,10 +124,10 @@ export default {
         }
         .text {
             h3 {
-                font-size: 18px;
+                font-size: 20px;
             }
             p {
-                font-size: 15px;
+                font-size: 17px;
             }
         }
 

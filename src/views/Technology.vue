@@ -136,7 +136,7 @@ export default {
 
 @media screen and (max-width: 768px) {
     .technology {
-        padding: 0 0 70px 0;
+        padding: 0 0 0 0;
         .back-section {
             margin-bottom: 25px;
         }

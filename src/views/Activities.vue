@@ -1,5 +1,5 @@
 <template>
-    <div class="kinds">
+    <div class="activities">
         <div class="container">
             <div class="back-section" data-aos="zoom-in-up">
                 <button type="button" @click="checkHistory() ? $router.go(-1) : $router.push('/')" class="btn text-greenGradient">
@@ -16,36 +16,36 @@
                         <span class="text-main">KEGIATAN METAVERSE</span>
                     </h1>
                     <div class="row justify-content-center">
-                        <div class="col-4 kind" data-aos="zoom-in-up">
-                            <div class="kind-image">
+                        <div class="col-4 activity" data-aos="zoom-in-up">
+                            <div class="activity-image">
                                 <img class="background" src="@/assets/images/backgrounds/1.png" alt="asset">
                                 <img class="icon" src="@/assets/images/activities/discussion.png" alt="asset">
                             </div>
                             <span>Ngobrol & Berdiskusi</span>
                         </div>
-                        <div class="col-4 kind" data-aos="zoom-in-up">
-                            <div class="kind-image">
+                        <div class="col-4 activity" data-aos="zoom-in-up">
+                            <div class="activity-image">
                                 <img class="background" src="@/assets/images/backgrounds/1.png" alt="asset">
                                 <img class="icon" src="@/assets/images/activities/games.png" alt="asset">
                             </div>
                             <span>Bermain Game</span>
                         </div>
-                        <div class="col-4 kind" data-aos="zoom-in-up">
-                            <div class="kind-image">
+                        <div class="col-4 activity" data-aos="zoom-in-up">
+                            <div class="activity-image">
                                 <img class="background" src="@/assets/images/backgrounds/1.png" alt="asset">
                                 <img class="icon" src="@/assets/images/activities/nft.png" alt="asset">
                             </div>
                             <span>Pameran Karya Seni</span>
                         </div>
-                        <div class="col-4 kind" data-aos="zoom-in-up">
-                            <div class="kind-image">
+                        <div class="col-4 activity" data-aos="zoom-in-up">
+                            <div class="activity-image">
                                 <img class="background" src="@/assets/images/backgrounds/1.png" alt="asset">
                                 <img class="icon" src="@/assets/images/activities/party.png" alt="asset">
                             </div>
                             <span>Konser Virtual</span>
                         </div>
-                        <div class="col-4 kind" data-aos="zoom-in-up">
-                            <div class="kind-image">
+                        <div class="col-4 activity" data-aos="zoom-in-up">
+                            <div class="activity-image">
                                 <img class="background" src="@/assets/images/backgrounds/1.png" alt="asset">
                                 <img class="icon" src="@/assets/images/activities/travelling.png" alt="asset">
                             </div>
@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
-.kinds {
+.activities {
     .image {
         background: url("@/assets/images/backgrounds/1.png");
         background-size: contain;
@@ -86,10 +86,10 @@ export default {
             margin: 40px 0;
             text-align: center;
         }
-        .kind {
+        .activity {
             text-align: center;
             margin-bottom: 40px;
-            .kind-image {
+            .activity-image {
                 min-height: 160px;
                 position: relative;
                 .background {
@@ -119,8 +119,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-    .kinds {
-        padding: 0 0 80px 0;
+    .activities {
         .image {
             img {
                 width: 70%;
@@ -132,9 +131,9 @@ export default {
                 margin: 20px 0;
                 font-size: 20px;
             }
-            .kind {
+            .activity {
                 margin-bottom: 20px;
-                .kind-image {
+                .activity-image {
                     min-height: 100px;
                     .background {
                         width: 100%;

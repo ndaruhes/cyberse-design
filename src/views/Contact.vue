@@ -80,6 +80,7 @@ export default {};
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
 .contact {
+    padding-bottom: 20px;
     .container {
         background: url("@/assets/images/backgrounds/3.png") no-repeat;
         background-position: center;
@@ -169,7 +170,7 @@ export default {};
 }
 @media screen and (max-width: 768px) {
     .contact {
-        padding: 20px 0 170px 0;
+        padding: 20px 0 370px 0;
         .header-mobile {
             color: $white;
             display: block;

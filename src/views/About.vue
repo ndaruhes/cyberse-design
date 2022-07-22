@@ -95,6 +95,7 @@
 @media screen and (max-width: 768px) {
     .about {
         overflow: visible;
+        padding-bottom: 120px;
 
         .fsd {
             font-size: 0.8rem;

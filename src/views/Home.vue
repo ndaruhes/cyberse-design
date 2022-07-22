@@ -45,7 +45,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/sass/variables";
 .hero {
-    padding: 80px 0;
+    padding: 55px 0;
     .text {
         position: relative;
         span {
@@ -86,7 +86,7 @@ export default {
 
 @media screen and (max-width: 768px) {
     .hero {
-        padding: 0;
+        padding: 0 0 30px 0;
         .text {
             margin-top: 20px;
             #typed {
