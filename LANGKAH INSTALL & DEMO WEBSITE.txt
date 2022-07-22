@@ -1,0 +1,14 @@
+LINK GITHUB
+---------------------------------------------
+https://github.com/ndaruhes/cyberse-design
+
+
+DEMO WEBSITE
+---------------------------------------------
+https://cyberse.netlify.app/
+
+
+LANGKAH INSTALASI
+---------------------------------------------
+1. jalankan `npm install` (tanpa kutip) pada root folder   // menginstall package (node_modules)
+2. jalankan `npm run dev` (tanpa kutip) pada root folder   // menjalankan website di localhost
