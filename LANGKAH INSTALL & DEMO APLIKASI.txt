@@ -1,0 +1,12 @@
+1. LINK GITHUB
+---------------------------------------------
+
+
+2. DEMO APLIKASI
+---------------------------------------------
+https://cyberse.netlify.app/
+
+
+3. LANGKAH INSTALASI
+---------------------------------------------
+jalankan `npm install` (tanpa kutip) pada root folder   // menginstall package (node_modules)
